@@ -1,11 +1,22 @@
-<script setup></script>
-
-<template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+<template class="pagina-principal">
+  <main>
+    <h1>{{ titulo }}</h1>
+    <p>Meu primeiro projeto em Vue.js</p>
+  </main>
 </template>
 
-<style scoped></style>
+<script setup>
+  const titulo = "Olá, mundo!";
+</script>
+
+<style scoped>
+.pagina-principal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  color: #42b983;
+  font-family: 'Chillax', sans-serif;
+}
+</style>
