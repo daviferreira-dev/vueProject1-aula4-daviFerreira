@@ -135,6 +135,20 @@ async function registrar() {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=DM+Mono:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+}
 </style>
 
 <style scoped>

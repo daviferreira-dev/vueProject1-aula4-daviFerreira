@@ -1,38 +1,33 @@
-# vueProject1-aula4-daviFerreira
+# Registro de Ocorrências
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto desenvolvido na disciplina de Frameworks Front-end do curso superior de
+Análise e Desenvolvimento de Sistemas.
 
-## Recommended IDE Setup
+Aplicação em Vue 3 que simula um livro de ocorrências: o usuário registra uma
+descrição e ela é adicionada a uma lista com número de protocolo e horário. O
+estado é gerenciado com Pinia.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Tecnologias
 
-## Recommended Browser Setup
+- Vue 3 (`<script setup>`)
+- Pinia
+- Vite
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Como executar
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Build de produção:
 
 ```sh
 npm run build
 ```
+
+## Estrutura
+
+- `src/App.vue` — interface e lógica de registro
+- `src/stores/ocorrencias.js` — store Pinia com a lista de ocorrências
+- `src/main.js` — inicialização do app e do Pinia
